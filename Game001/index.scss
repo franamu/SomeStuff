@@ -1,0 +1,54 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0px;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #D0DEF7;
+}
+
+#game-box {
+    position: relative;
+    display: none;
+    width: 100px;
+    height: 100px;
+}
+
+#player01 {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+#menu-box {
+    display: block;
+    position: relative;
+    width: 350px;
+    height: 150px;
+    border: 1px solid forestgreen;
+    text-align: center;
+    h1 {
+        margin: 20px 0px 0px 0px;
+    }
+    h3 {
+        margin: 0px;
+    }
+    button {
+        margin: 30px;
+    }
+}
+
+#select-layer {
+    display: none;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}

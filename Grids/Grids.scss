@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: repeat(3, 86vh [row-start]);
+    grid-template-columns: repeat(3, 90vw [col-start]);
+    gap: 1vw;
+    background-color: black;
+    width: fit-content;
+}
+
+.grid-cell {
+    text-align: center;
+}
+
+.grid-cell.active {
+    pointer-events: none;
+}
+
+#first {
+    background-color: white;
+}
+
+#second {
+    background-color: green;
+}
+
+#third {
+    background-color: orange;
+}
+
+#fourth {
+    background-color: blue;
+}
+
+#fifth {
+    background-color: yellow;
+}
+
+#sixth {
+    background-color: red;
+}
+
+#seventh {
+    background-color: grey;
+}
+
+#eighth {
+    background-color: black;
+}
+
+#ninth {
+    background-color: violet;
+}
+
+.dropdown {
+    position: absolute;
+    top: 2vh;
+    left: 2vw;
+    width: 40px;
+    height: 40px;
+}
+
+#floating-dropdown {
+    @extend .dropdown;
+    background-color: rgba($color: #444444, $alpha: 0.3);
+    border: 1px solid #444444;
+}
+
+.display-0 {
+    font-size: 30em;
+    margin: 0px;
+}
